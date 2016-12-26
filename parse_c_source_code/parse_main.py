@@ -4,7 +4,6 @@ import re
 if __name__ == "__main__":
     codepath = "F:/A_SoftDevelop/svn_oid_sdk/mpr_oid_sdk_simulator/mpr_oid_firmware/"
     p = Path(codepath)
-
     pattern = re.compile("extern \"C\"")
     for element in list(p.glob("**/*.h")):
         b_found = False
